@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">MobAppAssignment1</string>
+    <string name="triangle_type">Triangle Type</string>
+    <string name="first_side_length">First Side Length</string>
+    <string name="second_side_length">Second Side Length</string>
+    <string name="third_side_length">Third Side Length</string>
+    <string name="show_triangle_type">Show Triangle Type</string>
+    <string name="employee_s_wage">Employee\'s Wage</string>
+    <string name="hourly_wage">Hourly Wage</string>
+    <string name="total_regular_hours">Total Regular Hours</string>
+    <string name="overtime_pay">Overtime Pay</string>
+    <string name="calculate">Calculate</string>
+    <string name="triangles16">Triangles16</string>
+    <string name="wages16">Wages16</string>
+    <string name="select_calculation_application">Select calculation application</string>
+    <string name="mobile_applications_assignment_1">Mobile Applications Assignment 1</string>
+    <string name="type_of_triangle">Type of Triangle</string>
+    <string name="total_wage">Total Wage</string>
+    <string name="overtime_hours">Overtime Hours</string>
+    <string name="select_the_application">Select the application</string>
+</resources>

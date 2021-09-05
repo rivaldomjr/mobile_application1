@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/id_textViewwage1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="97dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="97dp"
+        android:layout_marginBottom="71dp"
+        android:text="@string/employee_s_wage"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/id_hourlywage"
+        app:layout_constraintEnd_toEndOf="@+id/id_hourlywage"
+        app:layout_constraintStart_toStartOf="@+id/id_textViewwage2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/id_textViewwage2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="180dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="35dp"
+        android:text="@string/hourly_wage"
+        app:layout_constraintBottom_toTopOf="@+id/id_textViewwage3"
+        app:layout_constraintEnd_toStartOf="@+id/id_hourlywage"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/id_textViewwage3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/total_regular_hours"
+        app:layout_constraintBottom_toBottomOf="@+id/id_totalregularhours"
+        app:layout_constraintEnd_toStartOf="@+id/id_totalregularhours"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_textViewwage2" />
+
+    <TextView
+        android:id="@+id/id_textViewwage4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="419dp"
+        android:text="@string/overtime_hours"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/id_overtimepay"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_textViewwage3" />
+
+    <EditText
+        android:id="@+id/id_hourlywage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="18dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/id_totalregularhours"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/id_textViewwage2"
+        app:layout_constraintTop_toBottomOf="@+id/id_textViewwage1" />
+
+    <EditText
+        android:id="@+id/id_totalregularhours"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/id_overtimepay"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/id_overtimepay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="267dp"
+        android:layout_marginEnd="23dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/id_buttonwagecalc"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="155dp"
+        android:layout_marginTop="74dp"
+        android:layout_marginEnd="166dp"
+        android:layout_marginBottom="297dp"
+        android:onClick="calculateWage"
+        android:text="@string/calculate"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_overtimepay" />
+
+    <TextView
+        android:id="@+id/id_totalwage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="173dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="181dp"
+        android:layout_marginBottom="208dp"
+        android:onClick="calculateWage"
+        android:text="@string/total_wage"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_buttonwagecalc" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

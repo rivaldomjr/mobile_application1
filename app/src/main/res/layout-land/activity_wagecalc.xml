@@ -1,0 +1,118 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/id_textViewwage1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="200dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/employee_s_wage"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/id_textViewwage2"
+            android:layout_width="wrap_content"
+            android:layout_height="18dp"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="39dp"
+            android:layout_marginEnd="61dp"
+            android:text="@string/hourly_wage" />
+
+        <EditText
+            android:id="@+id/id_hourlywage"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="10dp"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/id_textViewwage3"
+            android:layout_width="wrap_content"
+            android:layout_height="18dp"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="61dp"
+            android:layout_marginBottom="0dp"
+            android:text="@string/total_regular_hours" />
+
+        <EditText
+            android:id="@+id/id_overtimepay"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="10dp"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/id_textViewwage4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="150dp"
+            android:layout_marginEnd="43dp"
+            android:layout_marginBottom="0dp"
+            android:text="@string/overtime_hours" />
+
+
+        <EditText
+            android:id="@+id/id_totalregularhours"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="10dp"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/id_buttonwagecalc"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="145dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginEnd="120dp"
+            android:onClick="calculateWage"
+            android:text="@string/calculate"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"/>
+
+
+        <TextView
+            android:id="@+id/id_totalwage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="20dp"
+            android:onClick="calculateWage"
+            android:text="@string/total_wage"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+</LinearLayout>
